@@ -1,0 +1,58 @@
+body{
+    background-image: url(./flex\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    color: rgb(228, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.jizzax{
+    
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stepa{
+    padding: 20px 20px ;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: chocolate;
+}
+
+
+.stepb{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    justify-content:space-between;
+}
+.menu{
+    padding:20px 20px ;
+}
+.menu:hover{
+    color: chocolate;
+}
+.jizzax.a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+    text-align: 5enter;
+    justify-content: center;
+    margin-top: 60px;
+}
+.con{
+    margin: auto;
+    width:160px;
+    background-color: chocolate;
+    border: 1px solid coral;
+    border-radius: 20px;
+}
+.con:hover{
+    background-color:coral;
+}
+a{
+    text-align: end;
+}
