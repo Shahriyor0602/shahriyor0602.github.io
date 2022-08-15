@@ -7,16 +7,19 @@
 }
 
 
-
-
-.asosiy {
-    position: relative;
-
+body{
     background-image: url(./sources/background.jpg);
     width: 100%;
     
     background-repeat: no-repeat;
     background-size: cover;
+}
+    
+
+.asosiy {
+    position: relative;
+
+    
 }
 
 header nav {
