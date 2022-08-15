@@ -10,17 +10,13 @@
 body{
     background-image: url(./sources/background.jpg);
     width: 100%;
-    
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
     
 
-.asosiy {
-    position: relative;
 
-    
-}
 
 header nav {
     display: flex;
