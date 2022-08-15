@@ -1,3 +1,8 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoratio:none;
+}
 body{
     background-image: url(./flex\ copy.png);
     background-size: cover;
