@@ -20,9 +20,9 @@ header nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 25px;
+    padding: 0.3% 0.25%;
     /* position: relative; */
-    width: 1200px;
+    width: 90%px;
     margin: auto;
 
 
