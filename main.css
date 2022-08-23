@@ -128,6 +128,10 @@ section p {
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
 }
+.orta h1{
+    font-family: 'Bitter', serif;
+    
+}
 
 section button {
     width: 180px;
@@ -145,16 +149,27 @@ section button {
 section button:hover{
     background-color: rgba(202, 64, 5, 0.847)
 }
-@media (max-width:390px ) {
+@media (max-width:420px ) {
     section{
-        padding-left: 40px;
+        padding-left: 20px;
     }
     body{
         width: 100%;
-        height: 765px;;
+        height: 2000px;;
     }
     .step2{
-        margin-top:25px;
+        margin-top:35px;
     }
+    .asosiy{
+        width: 100%;
+        height: 100%;
+    }
+    select{
+        position: absolute;
+        left: 40px;
+        top: 80px;
+    }
+    
+   
     
 }
