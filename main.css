@@ -6,52 +6,47 @@
     text-decoration: none;
 }
 
+
 body{
     background-image: url(./sources/background.jpg);
     width: 100%;
-    height:100vh;
-    background-size: cover;
+    height: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 55px;
+    color: aliceblue;
 }
-
-
-
+/* =========  HEADER  ========= */
 
 header nav {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 25px;
-    /* position: relative; */
-    width: 90%;
-    margin: auto;
-
-
+    padding-top: 25px;
+    padding-bottom: 30px;
+    background-color: rgba(160, 152, 152, 0.447);
 }
-
-header {
-    background-color: rgba(0, 0, 0, 0.336);
+.logo{
+    font-family: 'Syncopate', sans-serif;
+    color: #DD4400;
+    font-size: 30px;
 }
-
 header select{
-    width: 150px;
-    height: 50px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #ff666600;
-    border-color: #ffffff;
-    border-radius: 30px;
-    text-transform: uppercase;
-    font-family: 'Aboreto', cursive;
-    font-family: 'DynaPuff', cursive;
-    font-weight: 800;
+    /* margin-top: 20px; */
+    width:120px;
+    height: 35px;
+    font-family: cursive;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 20px;
     font-size: 15px;
-    cursor: pointer;
-
+    font-weight: 900;
+    color: #ffffff;
 }
 header select:hover{
     background-color: #FF5B56;
-    border-color: #FF5B56
 }
 header option {
     background-color: #0c0404;
@@ -59,48 +54,14 @@ header option {
     text-transform: uppercase;
     font-family: 'Aboreto', cursive;
     font-weight: 700;
+    color: #ffffff;
+}   
+.orta_section{
+    margin-top: 3%;
+    padding-left: 10%;
+    padding-bottom: 2%;
 }
-
-
-.logo {
-    font-family: 'Syncopate', sans-serif;
-    color: #DD4400;
-    font-size: 30px;
-
-}
-
-header button {
-    border-radius: 19px;
-    width: 125px;
-    height: 35px;
-    background-color: #FF5B56;
-    color: #ebe2e2;
-    border-color: #FF5B56;
-}
-
-header button:hover {
-    background-color: #e7605b;
-    color: #ebe2e2;
-    border-color: #fd7e7a;
-}
-
-
-
-.orta {
-    margin: auto;
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-section {
-
-    padding-left: 100px;
-    padding-top: 150px;
-}
-
-section h4 {
+section h3 {
     font-family: 'DynaPuff', cursive;
     color: #afa4a4;
     margin-bottom: 25px;
@@ -128,48 +89,22 @@ section p {
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
 }
-.orta h1{
-    font-family: 'Bitter', serif;
-    
-}
+
+
+
 
 section button {
-    width: 180px;
-    height: 50px;
-    font-family: 'Syncopate', sans-serif;
-    background-color: #DD4400;
-    color: #ebe2e2;
     border-radius: 19px;
-    border-color: #dd4200e8;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 100px;
+    width: 125px;
+    height: 35px;
+    background-color: #fa504a;
+    color: #ebe2e2;
+    border-color: #FF5B56;
+}
 
+section button:hover {
+    background-color: #e7605b;
+    color: #ebe2e2;
+    border-color: #fd7e7a;
 }
-section button:hover{
-    background-color: rgba(202, 64, 5, 0.847)
-}
-@media (max-width:420px ) {
-    section{
-        padding-left: 20px;
-    }
-    body{
-        width: 100%;
-        height: 2000px;;
-    }
-    .step2{
-        margin-top:35px;
-    }
-    .asosiy{
-        width: 100%;
-        height: 100%;
-    }
-    select{
-        position: absolute;
-        left: 40px;
-        top: 80px;
-    }
-    
-   
-    
-}
+
