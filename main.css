@@ -107,4 +107,13 @@ section button:hover {
     color: #ebe2e2;
     border-color: #fd7e7a;
 }
+@media (max-width:425px) {
+    body{
+        height:100vh;
+        background-size: cover;
+    }
+    
+
+    
+}
 
