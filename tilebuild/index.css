@@ -202,7 +202,8 @@ section .box_1 {
 .box_2 {
     display: flex;
     flex-direction: column;
-    background-color: #000000;
+     background: #181818;
+
     color: #FFFFFF;
 }
 
@@ -306,6 +307,7 @@ section .box_1 {
 .rasm_1 {
     display: flex;
     /* justify-content: space-between; */
+    gap: 16px;
     margin: auto;
 
     /* gap: 26px; */
@@ -423,6 +425,8 @@ footer {
 
 footer .logo ul {
     display: flex;
+    justify-content: space-between;
+    gap: 25px;
     width: 100%;
 
 }
@@ -430,7 +434,7 @@ footer .logo ul {
 footer .logo ul li a {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     /* identical to box height */
@@ -439,20 +443,20 @@ footer .logo ul li a {
     color: #FFFFFF;
 }
 
-.footer .logo {
-    width: 0px;
-}
-.footer_q{
+
+.footer_q {
     display: flex;
     justify-content: space-between;
 }
+
 .footer_q div {
     margin-top: 56px;
 }
+
 .footer_q p {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 30px;
     /* or 167% */
@@ -461,6 +465,60 @@ footer .logo ul li a {
     color: #FFFFFF;
     margin-top: 20px;
     margin-bottom: 36px;
+}
+
+.nomer p {
+    /* margin-top: ; */
+    margin-bottom: 0;
+}
+
+.nomer a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+}
+
+
+
+.past p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.past h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+}
+.past span{
+    color: #B78601;
+}
+.past .past_2 {
+    /* display: flex; */
+    margin: auto;
+    text-align: center;
+    
+}
+.past{
+    margin: auto;
 }
 
 
@@ -479,11 +537,6 @@ footer .logo ul li a {
 
 
 @media (max-width:430px) {
-    body {
-        height: 100vh;
-        width: 100vh;
-
-    }
 
     header nav {
         display: flex;
@@ -491,6 +544,7 @@ footer .logo ul li a {
         width: 320px;
         gap: 15px;
         margin: auto;
+        
 
     }
 
@@ -507,6 +561,30 @@ footer .logo ul li a {
     nav ul {
         margin-top: 25px;
     }
+    .ichkari .comment img{
+        width: 55px;
+        height: 55px;
+    }
+    .comment p{
+        width: 100px;
+        font-size: 11px;
+    }
+    .step{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .rasm_a img{
+        width: calc(100%/12*6);
+    }
+    .rasm .desc{
+        width: calc(100%/12*6);
+        padding: 5px;
+    }
+    .rasm_a desc p{
+        width: 50px;
+        
+    }
+ 
 
 
 
