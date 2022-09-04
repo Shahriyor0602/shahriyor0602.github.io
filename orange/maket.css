@@ -22,6 +22,7 @@ header {
 
 header nav {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
   background-color: #FFFFFF;
 }
@@ -61,6 +62,7 @@ header nav ul li a:hover {
   font-weight: 400;
   font-size: 15px;
   line-height: 15px;
+  margin-top: 9px;
 
 
   color: #DD4400;
@@ -76,10 +78,20 @@ header nav ul li a:hover {
 }
 
 section {
-  padding: 36px 295px;
+  padding: 36px;
+  
+  
 
 }
-
+.box{
+  padding: 10%;
+  padding-top: 0.5%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  width: auto;
+  /* margin: auto; */
+}
 .boxes {
   border: 1px solid white;
   border-radius: 8px;
@@ -88,6 +100,7 @@ section {
   background: #FFFFFF;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   padding-top: 32px;
+  margin: 10px 0;
   
 
 
@@ -170,9 +183,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
+  justify-content: space-around;
+  padding-bottom: 50px;
 }
 
-.karta_2 {
+.karta_2 h3 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -186,7 +202,8 @@ button {
 
 .img {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  
   width: 200px;
   align-items: center;
 
@@ -215,6 +232,7 @@ button {
 
 
 footer {
+
   padding-top: 45px;
   padding-bottom: 48px;
  
@@ -239,8 +257,8 @@ footer b {
 .pastki{
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  width: 850px;
+  justify-content: space-around;
+  width: auto;
   text-align: center;
   
 }
@@ -295,3 +313,58 @@ footer b {
 
   color: #FFFFFF;
 }
+
+@media (max-width:768px) {
+  header{
+    background-image: url(./sources/trening-po-rabote-s-klientami.png);
+    background-size: cover;
+    width: 100vh;
+    height:500px;
+    
+  }
+  nav{
+    margin: auto;
+  }
+  header nav{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  header nav .logo{
+    margin-top: 54px;
+  }
+  header nav ul{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    row-gap: 5px;
+  }
+  section{
+    width: 100vh;
+  }
+  .box_2{
+    width: auto;
+  }
+  .karta{
+    width: auto;
+  }
+  .karta p{
+    width: 100%;
+    line-height: normal;
+    
+  }
+  .karta h2{
+    width: 90%;
+  }
+  footer{
+    width: 100vh;
+  }
+  
+}
+@media (max-width:768px) {
+  body{
+    width: 100vh;
+  }
+  
+}
+

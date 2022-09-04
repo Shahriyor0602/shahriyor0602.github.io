@@ -8,6 +8,7 @@
 
 header {
     width: 100%;
+    height: auto;
 
 }
 
@@ -41,7 +42,7 @@ header nav ul li a:hover {
 }
 
 .menu_a {
-    height: 347px;
+    height: auto;
     background: #2A2A2A;
     text-align: center;
 
@@ -80,6 +81,7 @@ header nav ul li a:hover {
     border-radius: 6px;
     padding: 13px 37px;
     margin-top: 46px;
+    margin-bottom: 35px;
 
 }
 
@@ -88,18 +90,23 @@ span {
 }
 
 /* =========   SECTION   ======== */
-
+section{
+    display: flex;
+    flex-direction: column;
+}
 .orta {
 
     background-color: #F8F8F8;
     width: 100%;
+    
 }
 
 .ichki {
     display: flex;
+    flex-wrap: wrap;
     height: 324px;
     text-align: center;
-    width: 961px;
+    width: auto;
     margin: auto;
 }
 
@@ -183,11 +190,19 @@ span {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 70px;
-    width: 975px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .rasmlar img {
-    border-radius: 5px;
+    width: calc(100%/12*3);
+    
+    margin: auto;
+    padding: 1% 1%;
+    border-radius: 15px;
+
 }
 
 /* ==========  FOOTER  ========== */
@@ -319,4 +334,63 @@ footer .img .e {
 
     color: #B5B5B5;
 
+}
+
+@media (max-width:430px) {
+    header nav {
+        display: flex;
+        gap: 30%;
+        margin: auto;
+        padding: 32px 20% 29px 20%;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        flex-direction: column;
+        margin: auto;
+        line-height: 25px;
+    }
+    header .logo{
+        margin-top: 25px;
+    }
+    .menu_m{
+        width: auto;
+    }
+    .menu_a{
+        padding: 0 5%;
+    }
+    .menu_a h1{
+        font-size: 50px;
+        font-weight: 200;
+        line-height: 60px;
+    }
+    .menu_a p{
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0 5%;
+    }
+
+    .ichki .icon{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    .orta_2{
+        margin-top: 500px;
+    }
+   
+    
+    
+}
+@media (max-width:912px) {
+    .ichki .icon{
+        margin-top: 25px;
+        margin-bottom: 10px;
+        /* border-bottom: 1px solid rgba(0, 0, 0, 0.642); */
+    }
+    .orta_2{
+        margin-top: 500px;
+    }
+   
 }
