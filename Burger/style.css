@@ -162,61 +162,120 @@ section nav ul li a:hover {
     transition: 0.25s;
 }
 
-.box {
+.menua {
+    color: white;
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2%;
+    margin: auto;
+    position: relative;
+    
+
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    /* height: auto; */
+    
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* text-align: center; */
     margin: auto;
     margin-top: 50px;
+    height: 350px;
     /* width: calc(100%/12*4); */
     /* justify-content: space-between; */
 }
-
-.rasm {
-    background-image: url(./Sources/Без\ имени-1\ 3.png);
-
-    width: 100%;
-    height: 350px;
-    padding-top: 82%;
-    /* display: block; */
-    /* padding-top: 88%; */
+.box:hover{
+    z-index: 1;
+    transform:scale(1.11) ; 
+    /* margin-bottom: 50px; */
 }
 
-
-.rasm .price {
-    width: 190px;
-    height: 60px;
-    background: #4E9F0D;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-    padding: 17px 57px;
-    display: flex;
-
-
-
-
-}
-
-.overlay {
+.box .rasm{
     position: absolute;
-    top: 60em;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+.box .rasm::before{
+    content: '';
+    position: absolute; 
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.605);
+    z-index: 1;
+    background-color: #4f9f0d66;
+    /* mix-blend-mode: multiply ; */
+    transition: 0.5s;
+    opacity: 0;
 
 
 }
+.box:hover .rasm::before{
+    opacity: 1;
+     
+}
+.rasm img{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 150px 80px;
+    align-items: flex-end;
+}
+
+.desc{
+    transition: 0.6s;
+    transform: translateY(40px);
+    margin-bottom: 40px;
+    /* text-transform: uppercase; */
+}
+.box:hover desc{
+    transform: translateY(50px);
+}
+.overlay p{
+    transition: 0.5s;
+    text-transform: uppercase;
+    transform: translateY(200px);
+
+}
+.box:hover .overlay p{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+    color: black;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
 
 .desc {
     text-align: center;
-    /* width: calc(100%/12*4); */
+    
 
 }
 
@@ -228,15 +287,7 @@ section nav ul li a:hover {
     width: 348px;
 }
 
-.menua {
-    color: white;
-    justify-content: space-between;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 2%;
-    margin: auto;
-}
+
 
 
 
@@ -280,10 +331,7 @@ section nav ul li a:hover {
         font-weight: 200;
         text-align: center;
     }
-    header{
-        /* background-position: center center; */
-        /* background-position-x:right  ; */
-    }
+  
     header .price {
         margin-left: 6%;
         width: 100px;
