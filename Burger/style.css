@@ -308,6 +308,8 @@ section nav ul li a:hover {
     header .logo {
         margin: auto;
         display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -354,6 +356,12 @@ section nav ul li a:hover {
         flex-direction: column;
         align-items: center;
         margin: auto;
+    }
+    .res{
+        margin: auto;
+    }
+    .box:hover{
+        transform: scale(1.05);
     }
     /* .box{
         width: auto;
