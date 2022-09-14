@@ -7,6 +7,7 @@
 
 }
 
+
 .container {
     max-width: 1140px;
     height: auto;
@@ -15,7 +16,8 @@
 }
 
 :root {
-    --yashil: #4E9F0D
+    --yashil: #4E9F0D;
+    --font: 'Raleway'
 }
 
 .space-b {
@@ -54,8 +56,12 @@ header .logo {
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
-
+    display: flex;
+    align-items: center;
     color: #FFFFFF;
+    padding: 15px 2.5%;
+
+
 }
 
 
@@ -67,7 +73,7 @@ header ul {
 header ul li a {
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
@@ -171,7 +177,7 @@ section nav ul li a:hover {
     gap: 2%;
     margin: auto;
     position: relative;
-    
+
 
 }
 
@@ -180,7 +186,7 @@ section nav ul li a:hover {
     overflow: hidden;
     transition: 0.5s;
     /* height: auto; */
-    
+
 
     /* display: flex; */
     /* flex-direction: column; */
@@ -191,22 +197,24 @@ section nav ul li a:hover {
     /* width: calc(100%/12*4); */
     /* justify-content: space-between; */
 }
-.box:hover{
+
+.box:hover {
     z-index: 1;
-    transform:scale(1.11) ; 
+    transform: scale(1.11);
     /* margin-bottom: 50px; */
 }
 
-.box .rasm{
+.box .rasm {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     width: 100%;
     height: 100%;
 }
-.box .rasm::before{
+
+.box .rasm::before {
     content: '';
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -219,20 +227,24 @@ section nav ul li a:hover {
 
 
 }
-.box:hover .rasm::before{
+
+.box:hover .rasm::before {
     opacity: 1;
-     
+
 }
-.rasm img{
-    position: absolute; 
+
+.rasm img {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.box .overlay{
+
+.box .overlay {
     position: absolute;
+    font-family: var(--font);
     left: 0;
     top: 0;
     width: 100%;
@@ -240,52 +252,101 @@ section nav ul li a:hover {
     z-index: 1;
     display: flex;
     padding: 150px 80px;
+    display: flex;
+    justify-items: center;
     align-items: flex-end;
 }
 
-.desc{
+.desc {
     transition: 0.6s;
     transform: translateY(40px);
     margin-bottom: 40px;
+    max-width: 320px;
+    text-align: center;
+    font-family: 'ROboto';
     /* text-transform: uppercase; */
 }
-.box:hover desc{
-    transform: translateY(50px);
-}
-.overlay p{
+
+.overlay p {
     transition: 0.5s;
     text-transform: uppercase;
     transform: translateY(200px);
+    width: 190px;
+    padding-right: 1%;
 
 }
-.box:hover .overlay p{
+
+.box:hover .overlay p {
     transform: translateY(0);
     transition-delay: 0.2s;
-    color: black;
-    font-weight: 800;
+    color: #FFFFFF;
+    font-weight: 900;
+
 }
 
 
+.orta {
+    margin-top: 85px;
 
+    background-image: url(./Sources/section_bg\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
 
+.orta .container {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 42px;
+}
 
+.orta h1 {
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--yashil);
+    color: #4E9F0D;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 46px;
 
+}
 
+.orta p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
 
-
-.desc {
+.container.a {
+    padding: 46px 0;
     text-align: center;
-    
-
+    color: #4E9F0D;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    text-transform: uppercase;
 }
 
-.desc p {
-    width: 348px;
-}
 
-.desc {
-    width: 348px;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -333,7 +394,7 @@ section nav ul li a:hover {
         font-weight: 200;
         text-align: center;
     }
-  
+
     header .price {
         margin-left: 6%;
         width: 100px;
@@ -345,11 +406,13 @@ section nav ul li a:hover {
         /* font-weight: 500; */
 
     }
-    section nav{
+
+    section nav {
         margin: auto;
         margin-top: 50px;
     }
-    section nav ul{
+
+    section nav ul {
         justify-content: space-between;
         line-height: 35px;
         display: flex;
@@ -357,12 +420,31 @@ section nav ul li a:hover {
         align-items: center;
         margin: auto;
     }
-    .res{
+
+    .res {
+        max-width: 320px;
         margin: auto;
+
     }
-    .box:hover{
+
+    .desc p {
+        margin: auto;
+        max-width: 315px;
+    }
+
+    .desc h2 {
+        margin: auto;
+        max-width: 315px;
+    }
+
+    .box:hover {
         transform: scale(1.05);
     }
+
+    .box .overlay {
+        padding: 150px 22%;
+    }
+
     /* .box{
         width: auto;
     }
