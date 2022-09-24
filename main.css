@@ -6,19 +6,25 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #030208;
+}
 
-body{
+header {
     background-image: url(./sources/background.jpg);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+
+
+}
+
+header .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 55px;
-    color: aliceblue;
 }
+
 /* =========  HEADER  ========= */
 
 header nav {
@@ -29,14 +35,16 @@ header nav {
     padding-bottom: 30px;
     background-color: rgba(160, 152, 152, 0.447);
 }
-.logo{
+
+.logo {
     font-family: 'Syncopate', sans-serif;
     color: #DD4400;
     font-size: 30px;
 }
-header select{
+
+header select {
     /* margin-top: 20px; */
-    width:120px;
+    width: 120px;
     height: 35px;
     font-family: cursive;
     background-color: rgba(240, 248, 255, 0);
@@ -45,9 +53,11 @@ header select{
     font-weight: 900;
     color: #ffffff;
 }
-header select:hover{
+
+header select:hover {
     background-color: #FF5B56;
 }
+
 header option {
     background-color: #0c0404;
     border-color: #0c0404;
@@ -55,24 +65,27 @@ header option {
     font-family: 'Aboreto', cursive;
     font-weight: 700;
     color: #ffffff;
-}   
-.orta_section{
+}
+
+.orta_section {
     margin-top: 3%;
-    padding-left: 10%;
+    /* padding-left: 10%; */
     padding-bottom: 2%;
 }
-.orta_section h2{
+
+.orta_section h2 {
     color: #afa4a4;
     margin: 25px 0;
 }
-section h3 {
+
+.orta_section h3 {
     font-family: 'DynaPuff', cursive;
     color: #afa4a4;
     margin-bottom: 25px;
 
 }
 
-section h1 {
+.orta_section h1 {
     font-family: 'Roboto', sans-serif;
 
     font-size: 40px;
@@ -84,12 +97,12 @@ section h1 {
     font-weight: 900;
 }
 
-section h3 {
+.orta_section h3 {
     color: #DD4400;
     margin-bottom: 18px;
 }
 
-section p {
+.orta_section p {
     color: #afa4a4;
     line-height: 35px;
     margin-bottom: 30px;
@@ -100,7 +113,7 @@ section p {
 
 
 
-section button {
+.orta_section button {
     border-radius: 19px;
     width: 125px;
     height: 35px;
@@ -109,22 +122,141 @@ section button {
     border-color: #FF5B56;
 }
 
-section button:hover {
+.orta_section button:hover {
     background-color: #e7605b;
     color: #ebe2e2;
     border-color: #fd7e7a;
 }
-@media (max-width:425px) {
-    body{
-        /* height:100vh; */
-        background-size: cover;
-    }
-    .orta_section{
-        padding-bottom: 50px;
-    }
 
-    
 
-    
+
+
+/* =======================================   SECTION START  ================================================ */
+
+
+.container {
+    max-width: 1140px;
+    margin: auto;
 }
 
+section .container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section .orta_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 55px;
+    margin-top: 100px;
+}
+
+.orta_2 div img {
+    width: 280px;
+    height: 380px;
+}
+
+.orta_2 .box .rasm {
+    max-width:100%;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    transition: 0.6s;
+    margin: auto;
+
+}
+.box:hover {
+    z-index: 1;
+    transform: scale(1.11);
+    
+    /* margin-bottom: 50px; */
+}
+.box .rasm::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
+    transition: 0.5s;
+    opacity: 0;
+    background-color: #0302086b;
+}
+.box:hover .rasm::before{
+    opacity: 1;
+}
+
+.box .overlay p{
+    position: absolute;    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: flex-end;
+    padding: 180px 80px;
+    color: #fff8f8;
+}
+.overlay p{
+    text-transform: uppercase;
+    transition: 0.6s;
+    transform: translateY(230px);
+    color: white;
+}
+.box:hover .overlay p{
+    transform: translateY(0);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:950px) {
+    .orta_2 .box div {
+        max-width: calc(100%/12*6);
+        margin: auto;
+    }
+
+    .orta_section {
+        padding-bottom: 50px;
+        padding-left: 8%;
+    }
+}
+@media (max-width:425px) {
+
+    .orta_section {
+        padding-bottom: 50px;
+        padding-left: 8%;
+    }
+    .orta_2{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+    .orta_2 .box {
+        max-width: 100%;
+        margin: auto;
+    }
+    .box .overlay p{
+        width: 150px;
+    }
+    
+
+
+
+
+
+}
